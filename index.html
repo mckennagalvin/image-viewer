@@ -3,7 +3,7 @@
 	<head>
 		<title>Image viewer</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
 		<div class="main">
@@ -13,6 +13,7 @@
 				Click on one of the thumbnails below to view the full image.
 			</div>
 
+			<!-- container populated with images in JS !-->
 			<div class="card">
 				<div id="thumbnail-container">
 				</div>
@@ -23,7 +24,21 @@
 			</footer>
 
 		</div>
+
+		<!-- lightbox popup !-->
+		<div id="overlay">
+			<div id="lightbox-container">
+				<div id="lightbox">
+					<span id="close">x</span>
+					<span id="prev">&lt;</span>
+					<span id="next">&gt;</span>
+					<img id="lightbox-img" src="https://image.freepik.com/free-vector/abstract-geometric-background-in-red-and-cream-tones_1095-254.jpg">
+				</div>
+			</div>
+		</div>
+
 	</body>
-	<script type="text/javascript" src="googleImages.js"></script>
-	<script src="https://www.googleapis.com/customsearch/v1?key=AIzaSyDXnPt5ennpfW1oDg2wEC7UCveid0d60AU&amp;cx=015060119142454451500:kqubayz7kbo&amp;q=sunset&amp;searchType=image&amp;imgSize=medium&amp;fileType=jpg&amp;callback=hndlr"></script>
+	<script type="text/javascript" src="js/googleImages.js"></script>
+	<script src="https://www.googleapis.com/customsearch/v1?key=AIzaSyDXnPt5ennpfW1oDg2wEC7UCveid0d60AU&amp;cx=015060119142454451500:kqubayz7kbo&amp;q=sunset&amp;searchType=image&amp;imgSize=large&amp;fileType=jpg&amp;callback=hndlr"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
 </html>
