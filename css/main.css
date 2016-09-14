@@ -92,6 +92,7 @@ h1 {
 
 #lightbox-img {
 	max-width: 50em;
+	max-height: 90vh;
 }
 
 footer {
